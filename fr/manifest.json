@@ -1,0 +1,20 @@
+{
+  "name": "Zerbil",
+  "icons": [
+    {
+      "src": "/components/img/favicons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/components/img/favicons/android-chrome-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "theme_color": "#140747",
+  "background_color": "#0d052e",
+  "start_url": "/fr",
+  "display": "standalone",
+  "scope": "/"
+}
