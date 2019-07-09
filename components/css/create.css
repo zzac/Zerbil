@@ -1,0 +1,126 @@
+form#create-box h2 {
+    margin: 40px;
+    font: 2em Forced-Square;
+    color: #5e3ee2;
+    text-align: center;
+}
+form#create-box input, form#create-box select {
+    color: #b1a0f6;
+    background-color: #190859;
+    border: 1px solid #5e3ee2;
+}
+form#create-box input[type="text"]::-webkit-input-placeholder {
+    color: #5e3ee2;
+}
+form#create-box input[type="text"]:-ms-input-placeholder {
+    color: #5e3ee2;
+}
+form#create-box input[type="text"]::-ms-input-placeholder {
+    color: #5e3ee2;
+}
+form#create-box input[type="text"]::placeholder {
+    color: #5e3ee2;
+}
+
+div#description-box {
+    border: 1px solid #5e3ee2;
+    width: 90%;
+    margin: 0 auto;
+    background: #190859;
+}
+textarea#description {
+    padding: 10px;
+    color: #b1a0f6;
+    font: 1em Share-Tech-Mono;
+    width: calc(100% - 20px);
+    resize: none;
+    border: none;
+    background: inherit;
+}
+p#description-preview {
+    text-align: center;
+    padding-left: 10px;
+    font: 1em Share-Tech-Mono;
+}
+p#description-preview img {
+    max-width: 90%;
+    border: 2px solid #5e3ee2;
+}
+textarea#description::-webkit-input-placeholder {
+    color: #5e3ee2;
+}
+textarea#description:-ms-input-placeholder {
+    color: #5e3ee2;
+}
+textarea#description::-ms-input-placeholder {
+    color: #5e3ee2;
+}
+textarea#description::placeholder {
+    color: #5e3ee2;
+}
+div#tool-bar {
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid #5e3ee2;
+}
+
+div.step-box {
+    -webkit-transition: border-color 0.5s;
+    -o-transition: border-color 0.5s;
+    transition: border-color 0.5s;
+    text-align: justify;
+    color: #5e3ee2;
+    font: 1em Roboto;
+    background: #140747;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #5e3ee2;
+}
+div.step-box span.number {
+    font: 2em Forced-Square;
+    color: #b1a0f6;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+div.step-box span.number::after {
+    content: ".";
+}
+div.step-box p.example {
+    font-style: italic;
+}
+div.step-box p.example span.value {
+    color: #b1a0f6;
+}
+div.step-box.invalid {
+    border-color: #e90e28;
+}
+div.step-box.invalid span.number {
+    color: #e90e28;
+}
+div.step-box.invalid div.error {
+    margin-top: 20px;
+    font: 2em Forced-Square;
+    padding: 5px;
+    text-align: center;
+    color: #e90e28;
+}
+
+input#submit-riddle {
+    display: block;
+    margin: 0 auto;
+}
+input#submit-riddle:disabled {
+    border-color: #a81324;
+    background: #730e1a;
+    color: #f1c394;
+    cursor: default;
+}
+
+@media only screen and (max-width: 720px) {
+    div.step-box {
+        width: 90%;
+    }
+}

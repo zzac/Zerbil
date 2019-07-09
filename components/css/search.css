@@ -1,0 +1,135 @@
+div#search-wrapper {
+    width: 50%;
+    float: left;
+}
+form#search-box {
+    background: #140747;
+    border: 2px solid #5e3ee2;
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+div#search-bar {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #5e3ee2;
+    margin-bottom: 20px;
+}
+div#search-bar input {
+    text-align: center;
+    color: #b1a0f6;
+    background: transparent;
+    border-style: none;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    float: left;
+}
+div#search-bar input::-webkit-input-placeholder {
+    color: #5e3ee2;
+}
+div#search-bar input:-ms-input-placeholder {
+    color: #5e3ee2;
+}
+div#search-bar input::-ms-input-placeholder {
+    color: #5e3ee2;
+}
+div#search-bar input::placeholder {
+    color: #5e3ee2;
+}
+div#search-bar input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+div#search-bar input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+div#search-bar input:focus::-ms-input-placeholder {
+    color: transparent;
+}
+div#search-bar input:focus::placeholder {
+    color: transparent;
+}
+div#search-bar button {
+    background: transparent;
+    border-style: none;
+    width: 30%;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+}
+button#search-options-button {
+    display: none;
+}
+div#search-options fieldset {
+    color: #5e3ee2;
+    clear: both;
+}
+div#search-options fieldset label span:hover {
+    color: #b1a0f6;
+    cursor: pointer;
+}
+div#search-options fieldset label input[type="radio"] {
+    display: none;
+}
+div#search-options fieldset label input[type="radio"]:checked + span {
+    color: #b1a0f6;
+}
+
+
+div#riddle-wrapper {
+    width: 50%;
+    float: right;
+}
+a.riddle-anchor {
+    text-decoration: none;
+}
+a.riddle-anchor > article.box.riddle {
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    -o-transition: transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+}
+a.riddle-anchor > article.box.riddle:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+img#level {
+    width: 32px;
+    float: right;
+}
+
+nav#page-navigation {
+    width: 80%;
+    margin: 16px auto;
+}
+nav#page-navigation a#previous {
+    float: left;
+}
+nav#page-navigation a#next {
+    float: right;
+}
+
+@media only screen and (max-width: 720px) {
+    div#search-wrapper, div#riddle-wrapper {
+        float: none;
+        width: 100%;
+    }
+
+    div#search-bar {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    div#search-bar input {
+        width: 60%;
+    }
+    div#search-bar button {
+        width: 20%;
+    }
+    button#search-options-button {
+        display: block;
+    }
+    div#search-options {
+        display: none;
+    }
+}

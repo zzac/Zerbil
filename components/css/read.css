@@ -1,0 +1,175 @@
+div#riddle-wrapper {
+    float: left;
+    width: 60%;
+}
+div#comment-wrapper {
+    float: right;
+    width: 40%;
+}
+
+button#go-back {
+    float: left;
+}
+img#reward {
+    width: 64px;
+    float: right;
+    margin-bottom: 10px;
+}
+article.box.riddle h2 span.author {
+    display: block;
+}
+p#description {
+    font: 1em Share-Tech-Mono;
+    color: #c41bc4;
+}
+p#description img {
+    border: 2px solid #770f85;
+    max-width: 90%;
+}
+
+article.box.riddle footer {
+    border-top: 1px solid #c41bc4;
+    padding-top: 15px;
+}
+article.box.riddle h3 {
+    color: #c41bc4;
+    font: 1em Roboto;
+}
+article.box.riddle form {
+    background: #6b065e;
+    border: 1px solid #c41bc4;
+    margin: 0 auto 20px auto;
+    width: 70%;
+    height: 48px;
+}
+article.box.riddle form input {
+    text-align: center;
+    background: transparent;
+    border: none;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    float: left;
+}
+article.box.riddle form input::-webkit-input-placeholder {
+    color: #c41bc4;
+}
+article.box.riddle form input:-ms-input-placeholder {
+    color: #c41bc4;
+}
+article.box.riddle form input::-ms-input-placeholder {
+    color: #c41bc4;
+}
+article.box.riddle form input::placeholder {
+    color: #c41bc4;
+}
+article.box.riddle form input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+article.box.riddle form input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+article.box.riddle form input:focus::-ms-input-placeholder {
+    color: transparent;
+}
+article.box.riddle form input:focus::placeholder {
+    color: transparent;
+}
+article.box.riddle form button {
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+
+div#comment-box {
+    padding: 0 10px;
+    background: #140747;
+    border: 2px solid #5e3ee2;
+    width: 90%;
+    margin: 0 auto;
+}
+div#comment-container {
+    overflow: hidden;
+    padding: 10px 0;
+    font: 1em Roboto;
+    color: #b1a0f6;
+}
+div.comment a {
+    margin-right: 7px;
+    text-decoration: none;
+}
+div.comment span.time-elapsed {
+    color: #5e3ee2;
+    margin-left: 7px;
+}
+p#no-comment {
+    color: #5e3ee2;
+    text-align: center;
+}
+
+button#more-comments {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+img#loading-wheel {
+    display: none;
+}
+
+div#comment-bar {
+    width: 100%;
+    height: 48px;
+    border-top: 1px solid #5e3ee2;
+}
+div#comment-bar input {
+    text-align: center;
+    color: #b1a0f6;
+    background: inherit;
+    border: none;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    float: left;
+}
+div#comment-bar input::-webkit-input-placeholder {
+    color: #5e3ee2;
+}
+div#comment-bar input:-ms-input-placeholder {
+    color: #5e3ee2;
+}
+div#comment-bar input::-ms-input-placeholder {
+    color: #5e3ee2;
+}
+div#comment-bar input::placeholder {
+    color: #5e3ee2;
+}
+div#comment-bar button {
+    background: transparent;
+    border: none;
+    width: 30%;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+}
+
+div#congratulations-container {
+    text-align: center;
+    font: 2em Forced-Square;
+    color: #5e3ee2;
+}
+div#congratulations-container img {
+    display: block;
+    margin: 20px auto;
+    width: 128px;
+}
+div#congratulations-container a {
+    text-decoration: underline;
+    color: #c41bc4;
+}
+
+@media only screen and (max-width: 720px) {
+    div#riddle-wrapper, div#comment-wrapper {
+        float: none;
+        width: 100%;
+    }
+}

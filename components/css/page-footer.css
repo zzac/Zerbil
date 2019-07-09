@@ -1,0 +1,19 @@
+footer#page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #140747;
+    background: #0a0229;
+    text-align: center;
+    padding: 15px;
+}
+footer#page-footer span.site-info {
+    color: #392199;
+    font: 1em Roboto;
+}
+footer#page-footer span.site-info+span.site-info::before {
+    content: "|";
+    margin: 0 10px;
+    color: #140747;
+}

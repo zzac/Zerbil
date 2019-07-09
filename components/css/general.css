@@ -1,0 +1,323 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    position: relative;
+    padding-bottom: 90px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #0d052e;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+a:hover, button:hover {
+    -webkit-filter: brightness(200%);
+            filter: brightness(200%);
+}
+main#page-main {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+::selection {
+    background: #5e3ee2;
+    color: #c41bc4;
+}
+button, input, select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    font: 1em Roboto;
+}
+select {
+    background-image: url(/components/img/ui/select-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 5px 29px 5px 5px;
+}
+
+img.pixelated {
+    -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-pixelated;
+        image-rendering: pixelated;
+}
+
+div.message-container {
+    margin: 20px 0;
+}
+div.message-container:first-child {
+    margin-top: 0;
+}
+div.message {
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid;
+    width: 70%;
+    font: 1em Roboto;
+    text-align: center;
+}
+div.message p {
+    margin: 5px;
+}
+div.message p a {
+    color: inherit;
+    text-decoration: underline;
+}
+div.message.error {
+    border-color: #a81324;
+    background: #730e1a;
+    -webkit-animation: error-animation 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation: error-animation 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+div.message.error p {
+    color: #f19f9f;
+}
+div.message.warning {
+    border-color: #c2520b;
+    background: #983e05;
+}
+div.message.warning p {
+    color: #f1c394;
+}
+div.message.info {
+    border-color: #371d91;
+    background: #251460;
+}
+div.message.info p {
+    color: #97c4f1;
+}
+div.message.success {
+    border-color: #0e610c;
+    background: #083b07;
+}
+div.message.success p {
+    color: #95f193;
+}
+
+.user-role.none {
+    color: #c41bc4;
+}
+.user-role.r {
+    color: #fcff39;
+}
+.user-role.m {
+    color: #1e5acf;
+}
+.user-role.z {
+    color: #dd1552;
+}
+
+input[type="email"], input[type="password"], input[type="submit"], input[type="text"], textarea {
+    border-radius: 0;
+    font: 1em Roboto;
+    padding: 10px;
+}
+input[type="submit"], button {
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+fieldset {
+    font: 1em Roboto;
+    border: none;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+fieldset legend {
+    margin-bottom: 7px;
+}
+
+.box {
+    border: 2px solid #c41bc4;
+    background: #3d0744;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+.box h2 {
+    font: 2em Forced-Square;
+    color: #c41bc4;
+    margin-bottom: 35px;
+    clear: both;
+}
+.box * ~ h2 {
+    margin: 0;
+}
+.box h2 a {
+    text-decoration: none;
+}
+.box header {
+    margin-bottom: 35px;
+}
+.box footer {
+    margin-top: 35px;
+}
+.box input[type="email"], .box input[type="password"], .box input[type="text"], .box textarea, .box input[type="submit"] {
+    background: #6b065e;
+    border: 1px solid #c41bc4;
+    color: #faa9f0;
+    margin: 0 auto 4px auto;
+    display: block;
+}
+.box input[type="email"]::-webkit-input-placeholder, .box input[type="password"]::-webkit-input-placeholder, .box input[type="text"]::-webkit-input-placeholder, .box textarea::-webkit-input-placeholder {
+    color: #c41bc4;
+}
+.box input[type="email"]:-ms-input-placeholder, .box input[type="password"]:-ms-input-placeholder, .box input[type="text"]:-ms-input-placeholder, .box textarea:-ms-input-placeholder {
+    color: #c41bc4;
+}
+.box input[type="email"]::-ms-input-placeholder, .box input[type="password"]::-ms-input-placeholder, .box input[type="text"]::-ms-input-placeholder, .box textarea::-ms-input-placeholder {
+    color: #c41bc4;
+}
+.box input[type="email"]::placeholder, .box input[type="password"]::placeholder, .box input[type="text"]::placeholder, .box textarea::placeholder {
+    color: #c41bc4;
+}
+.box input[type="submit"] {
+    margin: 15px auto 0 auto;
+}
+.box input[type="submit"]:hover {
+    color: #6b065e;
+    background: #c41bc4;
+}
+
+form.box.account {
+    width: 30%;
+}
+form.box.account a[href="login"], form.box.account a[href="register"] {
+    margin: 10px;
+    display: inline-block;
+    text-decoration: underline;
+    font: 1em Roboto;
+    color: #c41bc4;
+}
+
+article.box.riddle {
+    width: 80%;
+    overflow: hidden;
+}
+article.box.riddle div#lifetime {
+    color: #770f85;
+    font: 1em Roboto;
+    text-align: left;
+}
+article.box.riddle h2 span.name {
+    color: #770f85;
+}
+article.box.riddle h2 span.location {
+    color: #c41bc4;
+}
+
+@media only screen and (max-width: 720px) {
+    .box {
+        width: 80% !important;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+.scale-in-animation {
+    -webkit-animation: scale-in-animation 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+            animation: scale-in-animation 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+}
+@-webkit-keyframes scale-in-animation {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scale-in-animation {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes error-animation {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+    80% {
+        -webkit-transform: translateX(8px);
+                transform: translateX(8px);
+    }
+    90% {
+        -webkit-transform: translateX(-8px);
+                transform: translateX(-8px);
+    }
+}
+@keyframes error-animation {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+    80% {
+        -webkit-transform: translateX(8px);
+                transform: translateX(8px);
+    }
+    90% {
+        -webkit-transform: translateX(-8px);
+                transform: translateX(-8px);
+    }
+}
+/* ---------------------------------------------- */
+
+@font-face {
+	font-family: Forced-Square;
+	src: url(/components/fonts/forced-square.ttf);
+}
+@font-face {
+	font-family: Roboto;
+	src: url(/components/fonts/roboto.ttf);
+}
+@font-face {
+	font-family: Share-Tech-Mono;
+	src: url(/components/fonts/share-tech-mono.ttf);
+}

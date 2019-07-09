@@ -1,0 +1,94 @@
+div.box.profile {
+    width: 50%;
+}
+div.box.profile img.icon {
+    width: 64px;
+}
+div.box.profile div#email {
+    color: #770f85;
+}
+div.box.profile div#time-elapsed {
+    color: #770f85;
+    font: 1em Roboto;
+}
+
+div#solved-riddles-container {
+    border-top: 1px solid #c41bc4;
+    border-bottom: 1px solid #c41bc4;
+    padding: 10px 0;
+}
+table#solved-riddles-table {
+    width: 100%;
+    font: 1em Share-Tech-Mono;
+}
+table#solved-riddles-table caption {
+    margin-bottom: 10px;
+    color: #c41bc4;
+}
+table#solved-riddles-table td.reward, table#solved-riddles-table td.level {
+    width: 32px;
+}
+table#solved-riddles-table td.level img {
+    width: 32px;
+}
+table#solved-riddles-table td.name {
+    color: #c41bc4;
+}
+table#solved-riddles-table td.time-elapsed {
+    color: #770f85;
+}
+img#loading-wheel {
+    display: none;
+}
+
+div#update-account-box {
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    background: #140747;
+    border: 2px solid #5e3ee2;
+}
+div#update-account-box h3 {
+    color: #5e3ee2;
+    font: 2em Forced-Square;
+}
+div#update-account-box legend {
+    color: #5e3ee2;
+    margin: 10px;
+}
+div#update-account-box input, div#update-account-box select {
+    border: 1px solid #5e3ee2;
+    color: #b1a0f6;
+    background-color: #190859;
+}
+div#update-account-box input[type="submit"] {
+    margin: 10px auto;
+}
+div#update-account-box input[type="submit"]:hover {
+    color: #190859;
+    background: #5e3ee2;
+}
+div#update-account-box input[type="password"] {
+    display: block;
+    width: 240px;
+    margin: 0 auto 4px auto;
+}
+div#update-account-box input[type="password"]::-webkit-input-placeholder {
+    color: #5e3ee2;
+}
+div#update-account-box input[type="password"]:-ms-input-placeholder {
+    color: #5e3ee2;
+}
+div#update-account-box input[type="password"]::-ms-input-placeholder {
+    color: #5e3ee2;
+}
+div#update-account-box input[type="password"]::placeholder {
+    color: #5e3ee2;
+}
+
+@media only screen and (max-width: 720px) {
+    div#update-account-box {
+        width: 90%;
+    }
+}
